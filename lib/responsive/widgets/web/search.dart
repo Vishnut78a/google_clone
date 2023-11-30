@@ -10,7 +10,7 @@ class Search extends StatelessWidget{
     final size = MediaQuery.of(context).size;
     return Column(children: [ Center(child: Image.asset("asset/google-logo.png",height: size.height*0.15,)),
       const SizedBox(height: 20),
-      SizedBox(width: size.width*0.5,
+      SizedBox(width: size.width>=768?size.width*0.5:size.width*0.8,
                child: TextFormField(decoration: InputDecoration(border: OutlineInputBorder(borderRadius: BorderRadius.circular(30)),
                                     prefixIcon: Icon(CupertinoIcons.search),
                                     suffixIcon: Padding(padding: const EdgeInsets.all(8.0),

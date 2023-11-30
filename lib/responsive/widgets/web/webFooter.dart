@@ -6,7 +6,7 @@ class WebFooter extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 15.0),
+      padding: const EdgeInsets.all( 15.0),
       child: Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [Row(children: [FooterText(title: "About"),
                                            FooterText(title: "Advertising"),

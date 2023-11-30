@@ -6,6 +6,8 @@ import 'package:google_clone/responsive/widgets/web/search.dart';
 import 'package:google_clone/responsive/widgets/web/search_button.dart';
 import 'package:google_clone/responsive/widgets/web/webFooter.dart';
 
+import '../widgets/web/translation_Buttons.dart';
+
 class WebPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -31,6 +33,7 @@ class WebPage extends StatelessWidget{
                    children: [SearchButton("Google Search", searchColor),
                                 SizedBox(width: 10,),
                               SearchButton("I'm Feeling Lucky", searchColor)],),
+                              TranslationButtons()
                   ],),
          Column(children: [
            Column(children: [
