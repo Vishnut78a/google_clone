@@ -3,6 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../../screeens/search_Screen.dart';
+
 class Search extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -15,6 +17,10 @@ class Search extends StatelessWidget{
                                     prefixIcon: Icon(CupertinoIcons.search),
                                     suffixIcon: Padding(padding: const EdgeInsets.all(8.0),
                                                           child: SvgPicture.asset("asset/mic-icon.svg",),
-              )),),),],);
+                                    ),),
+                                    onFieldSubmitted:(query){
+                                    Navigator.push(context, MaterialPageRoute(builder: (context)=>
+                                         Search_Screen(start: '0', searchQuery: query)));
+    },),),],);
   }
 }

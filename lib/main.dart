@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor:  backgroundColor
       ),
       debugShowCheckedModeBanner: false,
-      home: Search_Screen()
+      home: Responsive(mobileScreen: MobilePage(), webScreen: WebPage())
     );
   }
 }
